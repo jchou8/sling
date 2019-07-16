@@ -41,7 +41,7 @@ class InputBox extends React.Component<InputBoxProps, InputBoxState> {
                 <form className="input-form" onSubmit={this.handleSubmit}>
                     <TextField
                         className="input-box"
-                        id="filled-multiline-flexible"
+                        id="input-box"
                         value={this.state.input}
                         onChange={e => this.handleInputChange(e.currentTarget.value)}
                         margin="dense"
@@ -52,6 +52,7 @@ class InputBox extends React.Component<InputBoxProps, InputBoxState> {
                             endAdornment: (
                                 <InputAdornment position="end">
                                     <IconButton
+                                        id="input-submit"
                                         className="input-submit"
                                         type="submit"
                                         value="Submit"

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputBox /> should render when disabled 1`] = `ReactWrapper {}`;
+
+exports[`<InputBox /> should render when enabled 1`] = `ReactWrapper {}`;
