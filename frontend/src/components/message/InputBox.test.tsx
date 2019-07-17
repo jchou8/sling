@@ -6,17 +6,19 @@ const sendFn = jest.fn()
 
 describe('<InputBox />', () => {
   let mount: Function
+  let shallow: Function
   beforeAll(() => {
     mount = createMount()
+    shallow = createShallow()
   })
 
   it('should render when enabled', () => {
-    const component = mount(<InputBox enabled={true} sendMessage={sendFn} />)
+    const component = shallow(<InputBox enabled={true} sendMessage={sendFn} />)
     expect(component).toMatchSnapshot()
   })
 
   it('should render when disabled', () => {
-    const component = mount(<InputBox enabled={false} sendMessage={sendFn} />)
+    const component = shallow(<InputBox enabled={false} sendMessage={sendFn} />)
     expect(component).toMatchSnapshot()
   })
 
